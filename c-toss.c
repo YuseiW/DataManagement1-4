@@ -3,6 +3,16 @@
 #include <time.h>
 
 int main() {
+    // Variable to store the user's name
+    char name[50];
+
+    // Ask for the user's name
+    printf("Who are you? \n> ");
+    scanf("%49s", name);
+
+    // Greet the user
+    printf("Hello, %s!\n", name);
+
     // Seed the random number generator
     srand(time(NULL));
 
